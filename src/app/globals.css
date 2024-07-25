@@ -68,3 +68,15 @@ p {
   color: var(--text);
   /* Add any other styles for active/hover state */
 }
+
+@media (max-width: 600px) {
+  h3 {
+    font-size: 18px;
+    font-weight: 100;
+  }
+  
+  p {
+    font-size: 12px;
+  }
+
+}

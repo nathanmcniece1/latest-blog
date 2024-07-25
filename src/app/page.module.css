@@ -20,7 +20,7 @@
   justify-content: center;
   margin: auto;
   padding: 10px 15px; /* Reduced padding */
-  border-radius: 15px; /* Reduced border radius */
+  border-radius: 10px; /* Reduced border radius */
   transition: background-color  ease;
   border: 1px solid #CECECE;
   margin-bottom: 10px;
@@ -37,6 +37,7 @@
   display: flex;
   font-size: 0.9em; /* Reduce font size */
   color: #666; /* Add a subtle color */
+  line-height: .5;
 }
 
 .lightBlogContainer {
@@ -161,6 +162,7 @@
     padding: 5px 10px;
     
   }
+  
 
 }
 
@@ -173,6 +175,7 @@
 
   .blogContainer {
     max-width: 80%;
+    
   }
 
 
@@ -218,7 +221,7 @@
 @media (min-width: 1400px) {
 
   .blogContainer {
-    max-width: 50%;
+    max-width: 45%;
   }
 
   .navigation {
