@@ -69,6 +69,7 @@
 .navigation {
   display: flex;
   justify-content: center;
+  margin-top: -15px;
   margin-bottom: 20px;
   font-family: var(--font-bebas-neue), sans-serif;
   text-transform: uppercase;
