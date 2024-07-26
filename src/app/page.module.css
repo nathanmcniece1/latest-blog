@@ -26,6 +26,7 @@
   margin-bottom: 10px;
   display: block;
   text-decoration: none;
+  border-left: 4px solid rgb(255, 28, 172);
 }
 
 .blogContainer h3 {
@@ -66,6 +67,7 @@
   color: var(--background);
   transition: background-color , color 0.1s;
 }
+
 
 .navigation {
   display: flex;

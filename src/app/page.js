@@ -103,23 +103,9 @@ export default function Home() {
         </div>
       </div>
       <div className={blogContainerClass}>
-        <h3>The Evolution of Digital Ownership</h3>
+        <h3>Philosophical Implications of Decentralized Systems</h3>
         <div className={styles.blogData}>
-          <p className={styles.blogCategory}>Crypto ~</p>
-          <p>10.03.23</p>
-        </div>
-      </div>
-      <div className={blogContainerClass}>
-        <h3>Decentralized Finance: A New Financial Paradigm</h3>
-        <div className={styles.blogData}>
-          <p className={styles.blogCategory}>Crypto ~</p>
-          <p>10.03.23</p>
-        </div>
-      </div>
-      <div className={blogContainerClass}>
-        <h3>The Intersection of AI and Blockchain</h3>
-        <div className={styles.blogData}>
-          <p className={styles.blogCategory}>AI ~</p>
+          <p className={styles.blogCategory}>Philosophy ~</p>
           <p>10.03.23</p>
         </div>
       </div>
