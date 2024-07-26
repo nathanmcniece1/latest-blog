@@ -38,7 +38,7 @@
   display: flex;
   font-size: 0.9em; /* Reduce font size */
   color: #666; /* Add a subtle color */
-  line-height: .5;
+  line-height: 0;
 }
 
 .lightBlogContainer {
