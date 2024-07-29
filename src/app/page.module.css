@@ -197,11 +197,11 @@
 
   .text {
     width: 100%;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .textContainer {
-    width: 85%; /* Change this to 100% */
+    width: 88%; /* Change this to 100% */
     margin-top: 30px;
   }
 
