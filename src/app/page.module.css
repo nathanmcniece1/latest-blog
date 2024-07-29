@@ -29,6 +29,35 @@
   border-left: 4px solid rgb(255, 28, 172);
 }
 
+.containerDiv {
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #FF1CAC;
+  
+}
+
+.lightContainerDiv {
+  background-color: #ffffff;
+}
+
+.darkContainerDiv {
+  background-color: #2a2828;
+}
+
+.textContainer {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.text {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
 .blogContainer h3 {
   margin: 0 0 5px 0; /* Reduce margin */
   margin-top: 10px;
@@ -165,6 +194,22 @@
     margin-bottom: 8px;
     
   }
+
+  .text {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .textContainer {
+    width: 85%; /* Change this to 100% */
+    margin-top: 30px;
+  }
+
+  .containerDiv {
+    margin-top: 0px;
+  }
+
+  
   
 
 }
