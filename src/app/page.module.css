@@ -63,6 +63,7 @@
   margin-top: 10px;
 }
 
+
 .blogData {
   display: flex;
   font-size: 0.9em; /* Reduce font size */
@@ -97,7 +98,6 @@
   transition: background-color , color 0.1s;
 }
 
-
 .navigation {
   display: flex;
   justify-content: center;
@@ -119,7 +119,7 @@
 }
 
 
-.cryptoItem {
+/* .cryptoItem {
   color: #FA4141 !important;
 }
 
@@ -136,8 +136,8 @@
 }
 
 .miscItem {
-  color: #FF2DDD !important; /* Changed this to pink as per the image */
-}
+  color: #FF2DDD !important; 
+} */
 
 .navigation a:hover, .navigation a.active {
   text-decoration: underline;
@@ -198,6 +198,7 @@
   .text {
     width: 100%;
     font-size: 16px;
+    /* font-weight: 100; */
   }
 
   .textContainer {

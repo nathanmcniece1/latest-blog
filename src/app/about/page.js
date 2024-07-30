@@ -18,6 +18,7 @@ export default function About() {
 
   const containerDivClass = `${styles.containerDiv} ${isDarkMode ? styles.darkContainerDiv : styles.lightContainerDiv}`;
 
+
   return (
     <div className={`${styles.container} ${isDarkMode ? 'dark' : ''}`}>
       <header className={styles.header}>
