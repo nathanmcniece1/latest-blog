@@ -47,6 +47,7 @@ export default function Home() {
      <Link href="/about" className={blogContainerClass}>
   <div>
     <h3>The Internet of NFTs</h3>
+    <p>To anyone paying attention, it appears were at an interesting moment in the history of the Web. On the back of ~60 years of Moores Law...</p>
     <div className={styles.blogData}>
       <p className={styles.blogCategory}>Crypto ~</p>
       <p>10.03.23</p>
@@ -55,6 +56,7 @@ export default function Home() {
 </Link>
       <div className={blogContainerClass}>
         <h3>Blockchains as Institutions for the Digital Age</h3>
+        <p>To anyone paying attention, it appears were at an interesting moment in the history of the Web. On the back of ~60 years of Moores Law...</p>
         <div className={styles.blogData}>
           <p className={styles.blogCategory}>Crypto ~</p>
           <p>10.03.23</p>
@@ -62,6 +64,7 @@ export default function Home() {
       </div>
       <div className={blogContainerClass}>
         <h3>Cryptonetworks as Media Networks</h3>
+        <p>To anyone paying attention, it appears were at an interesting moment in the history of the Web. On the back of ~60 years of Moores Law...</p>
         <div className={styles.blogData}>
           <p className={styles.blogCategory}>Crypto ~</p>
           <p>10.03.23</p>
@@ -69,6 +72,7 @@ export default function Home() {
       </div>
       <div className={blogContainerClass}>
         <h3>The Evolution of Digital Ownership</h3>
+        <p>To anyone paying attention, it appears were at an interesting moment in the history of the Web. On the back of ~60 years of Moores Law...</p>
         <div className={styles.blogData}>
           <p className={styles.blogCategory}>Crypto ~</p>
           <p>10.03.23</p>
@@ -76,6 +80,7 @@ export default function Home() {
       </div>
       <div className={blogContainerClass}>
         <h3>Decentralized Finance: A New Financial Paradigm</h3>
+        <p>To anyone paying attention, it appears were at an interesting moment in the history of the Web. On the back of ~60 years of Moores Law...</p>
         <div className={styles.blogData}>
           <p className={styles.blogCategory}>Crypto ~</p>
           <p>10.03.23</p>
@@ -83,6 +88,7 @@ export default function Home() {
       </div>
       <div className={blogContainerClass}>
         <h3>The Intersection of AI and Blockchain</h3>
+        <p>To anyone paying attention, it appears were at an interesting moment in the history of the Web. On the back of ~60 years of Moores Law...</p>
         <div className={styles.blogData}>
           <p className={styles.blogCategory}>AI ~</p>
           <p>10.03.23</p>
@@ -90,6 +96,7 @@ export default function Home() {
       </div>
       <div className={blogContainerClass}>
         <h3>Philosophical Implications of Decentralized Systems</h3>
+        <p>To anyone paying attention, it appears were at an interesting moment in the history of the Web. On the back of ~60 years of Moores Law...</p>
         <div className={styles.blogData}>
           <p className={styles.blogCategory}>Philosophy ~</p>
           <p>10.03.23</p>
@@ -97,6 +104,7 @@ export default function Home() {
       </div>
       <div className={blogContainerClass}>
         <h3>Biomimicry in Blockchain Design</h3>
+        <p>To anyone paying attention, it appears were at an interesting moment in the history of the Web. On the back of ~60 years of Moores Law...</p>
         <div className={styles.blogData}>
           <p className={styles.blogCategory}>Biology ~</p>
           <p>10.03.23</p>
@@ -104,6 +112,7 @@ export default function Home() {
       </div>
       <div className={blogContainerClass}>
         <h3>Philosophical Implications of Decentralized Systems</h3>
+        <p>To anyone paying attention, it appears were at an interesting moment in the history of the Web. On the back of ~60 years of Moores Law...</p>
         <div className={styles.blogData}>
           <p className={styles.blogCategory}>Philosophy ~</p>
           <p>10.03.23</p>

@@ -26,8 +26,10 @@
   margin-bottom: 10px;
   display: block;
   text-decoration: none;
-  border-left: 4px solid rgb(255, 28, 172);
+  /* border-left: 4px solid rgb(255, 28, 172); */
+  border: .5px solid rgb(110, 110, 110);
 }
+
 
 .containerDiv {
   width: 80%;
@@ -35,7 +37,7 @@
   margin: 20px auto;
   padding: 20px;
   border-radius: 8px;
-  border-left: 4px solid #FF1CAC;
+  /* border-left: 4px solid #FF1CAC; */
   
 }
 
