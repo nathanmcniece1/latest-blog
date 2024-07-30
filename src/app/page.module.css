@@ -20,14 +20,14 @@
   justify-content: center;
   margin: auto;
   padding: 10px 15px; /* Reduced padding */
-  border-radius: 12px; /* Reduced border radius */
+  border-radius: 15px; /* Reduced border radius */
   transition: background-color  ease;
   /* border: 1px solid #CECECE; */
   margin-bottom: 10px;
   display: block;
   text-decoration: none;
   /* border-left: 4px solid rgb(255, 28, 172); */
-  border: .5px solid rgb(110, 110, 110);
+  border: .5px solid grey;
 }
 
 
@@ -38,6 +38,7 @@
   padding: 20px;
   border-radius: 8px;
   /* border-left: 4px solid #FF1CAC; */
+  border: .5px solid grey;
   
 }
 
