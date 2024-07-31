@@ -58,11 +58,27 @@ export default function Home() {
           </div>
         </div>
       </Link>
-      <div className={getBlogContainerClass('Crypto')}>
-        <h3>Blockchains as Institutions for the Digital Age</h3>
+      <div className={getBlogContainerClass('AI')}>
+        <h3>The Intersection of AI and Blockchain</h3>
         <p>To anyone paying attention, it appears we&apos;re at an interesting moment in the history of the Web. On the back of ~60 years of Moore&apos;s Law...</p>
         <div className={styles.blogData}>
-          <p className={styles.blogCategory}>Crypto ~</p>
+          <p className={styles.blogCategory}>AI ~</p>
+          <p>10.03.23</p>
+        </div>
+      </div>
+      <div className={getBlogContainerClass('Biology')}>
+        <h3>Biomimicry in Blockchain Design</h3>
+        <p>To anyone paying attention, it appears we&apos;re at an interesting moment in the history of the Web. On the back of ~60 years of Moore&apos;s Law...</p>
+        <div className={styles.blogData}>
+          <p className={styles.blogCategory}>Biology ~</p>
+          <p>10.03.23</p>
+        </div>
+      </div>
+      <div className={getBlogContainerClass('Philosophy')}>
+        <h3>Philosophical Implications of Decentralized Systems</h3>
+        <p>To anyone paying attention, it appears we&apos;re at an interesting moment in the history of the Web. On the back of ~60 years of Moore&apos;s Law...</p>
+        <div className={styles.blogData}>
+          <p className={styles.blogCategory}>Philosophy ~</p>
           <p>10.03.23</p>
         </div>
       </div>
