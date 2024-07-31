@@ -22,7 +22,11 @@ export default function Home() {
     setMounted(true);
   }, []);
 
-  const blogContainerClass = `${styles.blogContainer} ${isDarkMode ? styles.darkBlogContainer : styles.lightBlogContainer}`;
+  const getBlogContainerClass = (category) => {
+    const baseClass = `${styles.blogContainer} ${isDarkMode ? styles.darkBlogContainer : styles.lightBlogContainer}`;
+    const categoryClass = styles[`${category.toLowerCase()}Container`] || '';
+    return `${baseClass} ${categoryClass}`;
+  };
 
   if (!mounted) {
     return null; // or return a loading spinner
@@ -44,75 +48,99 @@ export default function Home() {
         <a href="#" className={`${styles.navItem} ${styles.aiItem}`}>AI</a>
         <a href="#" className={`${styles.navItem} ${styles.miscItem}`}>MISC</a>
       </nav>
-     <Link href="/about" className={blogContainerClass}>
-  <div>
-    <h3>The Internet of NFTs</h3>
-    <p>To anyone paying attention, it appears were at an interesting moment in the history of the Web. On the back of ~60 years of Moores Law...</p>
-    <div className={styles.blogData}>
-      <p className={styles.blogCategory}>Crypto ~</p>
-      <p>10.03.23</p>
-    </div>
-  </div>
-</Link>
-      <div className={blogContainerClass}>
-        <h3>Blockchains as Institutions for the Digital Age</h3>
-        <p>To anyone paying attention, it appears were at an interesting moment in the history of the Web. On the back of ~60 years of Moores Law...</p>
-        <div className={styles.blogData}>
-          <p className={styles.blogCategory}>Crypto ~</p>
-          <p>10.03.23</p>
+      <Link href="/about" className={getBlogContainerClass('Crypto')}>
+        <div>
+          <h3>The Internet of NFTs</h3>
+          <p>To anyone paying attention, it appears we're at an interesting moment in the history of the Web. On the back of ~60 years of Moore's Law...</p>
+          <div className={styles.blogData}>
+            <p className={styles.blogCategory}>Crypto ~</p>
+            <p>10.03.23</p>
+          </div>
         </div>
-      </div>
-      <div className={blogContainerClass}>
-        <h3>Cryptonetworks as Media Networks</h3>
-        <p>To anyone paying attention, it appears were at an interesting moment in the history of the Web. On the back of ~60 years of Moores Law...</p>
-        <div className={styles.blogData}>
-          <p className={styles.blogCategory}>Crypto ~</p>
-          <p>10.03.23</p>
-        </div>
-      </div>
-      <div className={blogContainerClass}>
-        <h3>The Evolution of Digital Ownership</h3>
-        <p>To anyone paying attention, it appears were at an interesting moment in the history of the Web. On the back of ~60 years of Moores Law...</p>
-        <div className={styles.blogData}>
-          <p className={styles.blogCategory}>Crypto ~</p>
-          <p>10.03.23</p>
-        </div>
-      </div>
-      <div className={blogContainerClass}>
-        <h3>Decentralized Finance: A New Financial Paradigm</h3>
-        <p>To anyone paying attention, it appears were at an interesting moment in the history of the Web. On the back of ~60 years of Moores Law...</p>
-        <div className={styles.blogData}>
-          <p className={styles.blogCategory}>Crypto ~</p>
-          <p>10.03.23</p>
-        </div>
-      </div>
-      <div className={blogContainerClass}>
+      </Link>
+      <div className={getBlogContainerClass('AI')}>
         <h3>The Intersection of AI and Blockchain</h3>
-        <p>To anyone paying attention, it appears were at an interesting moment in the history of the Web. On the back of ~60 years of Moores Law...</p>
+        <p>To anyone paying attention, it appears we're at an interesting moment in the history of the Web. On the back of ~60 years of Moore's Law...</p>
         <div className={styles.blogData}>
           <p className={styles.blogCategory}>AI ~</p>
           <p>10.03.23</p>
         </div>
       </div>
-      <div className={blogContainerClass}>
-        <h3>Philosophical Implications of Decentralized Systems</h3>
-        <p>To anyone paying attention, it appears were at an interesting moment in the history of the Web. On the back of ~60 years of Moores Law...</p>
+      <div className={getBlogContainerClass('Crypto')}>
+        <h3>Blockchains as Institutions for the Digital Age</h3>
+        <p>To anyone paying attention, it appears we're at an interesting moment in the history of the Web. On the back of ~60 years of Moore's Law...</p>
         <div className={styles.blogData}>
-          <p className={styles.blogCategory}>Philosophy ~</p>
+          <p className={styles.blogCategory}>Crypto ~</p>
           <p>10.03.23</p>
         </div>
       </div>
-      <div className={blogContainerClass}>
+      <div className={getBlogContainerClass('Biology')}>
         <h3>Biomimicry in Blockchain Design</h3>
-        <p>To anyone paying attention, it appears were at an interesting moment in the history of the Web. On the back of ~60 years of Moores Law...</p>
+        <p>To anyone paying attention, it appears we're at an interesting moment in the history of the Web. On the back of ~60 years of Moore's Law...</p>
         <div className={styles.blogData}>
           <p className={styles.blogCategory}>Biology ~</p>
           <p>10.03.23</p>
         </div>
       </div>
-      <div className={blogContainerClass}>
+      <div className={getBlogContainerClass('Philosophy')}>
         <h3>Philosophical Implications of Decentralized Systems</h3>
-        <p>To anyone paying attention, it appears were at an interesting moment in the history of the Web. On the back of ~60 years of Moores Law...</p>
+        <p>To anyone paying attention, it appears we're at an interesting moment in the history of the Web. On the back of ~60 years of Moore's Law...</p>
+        <div className={styles.blogData}>
+          <p className={styles.blogCategory}>Philosophy ~</p>
+          <p>10.03.23</p>
+        </div>
+      </div>
+      <div className={getBlogContainerClass('Crypto')}>
+        <h3>Cryptonetworks as Media Networks</h3>
+        <p>To anyone paying attention, it appears we're at an interesting moment in the history of the Web. On the back of ~60 years of Moore's Law...</p>
+        <div className={styles.blogData}>
+          <p className={styles.blogCategory}>Crypto ~</p>
+          <p>10.03.23</p>
+        </div>
+      </div>
+      <div className={getBlogContainerClass('Crypto')}>
+        <h3>The Evolution of Digital Ownership</h3>
+        <p>To anyone paying attention, it appears we're at an interesting moment in the history of the Web. On the back of ~60 years of Moore's Law...</p>
+        <div className={styles.blogData}>
+          <p className={styles.blogCategory}>Crypto ~</p>
+          <p>10.03.23</p>
+        </div>
+      </div>
+      <div className={getBlogContainerClass('Crypto')}>
+        <h3>Decentralized Finance: A New Financial Paradigm</h3>
+        <p>To anyone paying attention, it appears we're at an interesting moment in the history of the Web. On the back of ~60 years of Moore's Law...</p>
+        <div className={styles.blogData}>
+          <p className={styles.blogCategory}>Crypto ~</p>
+          <p>10.03.23</p>
+        </div>
+      </div>
+      <div className={getBlogContainerClass('AI')}>
+        <h3>The Intersection of AI and Blockchain</h3>
+        <p>To anyone paying attention, it appears we're at an interesting moment in the history of the Web. On the back of ~60 years of Moore's Law...</p>
+        <div className={styles.blogData}>
+          <p className={styles.blogCategory}>AI ~</p>
+          <p>10.03.23</p>
+        </div>
+      </div>
+      <div className={getBlogContainerClass('Philosophy')}>
+        <h3>Philosophical Implications of Decentralized Systems</h3>
+        <p>To anyone paying attention, it appears we're at an interesting moment in the history of the Web. On the back of ~60 years of Moore's Law...</p>
+        <div className={styles.blogData}>
+          <p className={styles.blogCategory}>Philosophy ~</p>
+          <p>10.03.23</p>
+        </div>
+      </div>
+      <div className={getBlogContainerClass('Biology')}>
+        <h3>Biomimicry in Blockchain Design</h3>
+        <p>To anyone paying attention, it appears we're at an interesting moment in the history of the Web. On the back of ~60 years of Moore's Law...</p>
+        <div className={styles.blogData}>
+          <p className={styles.blogCategory}>Biology ~</p>
+          <p>10.03.23</p>
+        </div>
+      </div>
+      <div className={getBlogContainerClass('Philosophy')}>
+        <h3>Philosophical Implications of Decentralized Systems</h3>
+        <p>To anyone paying attention, it appears we're at an interesting moment in the history of the Web. On the back of ~60 years of Moore's Law...</p>
         <div className={styles.blogData}>
           <p className={styles.blogCategory}>Philosophy ~</p>
           <p>10.03.23</p>

@@ -19,17 +19,22 @@
   width: 80%;
   justify-content: center;
   margin: auto;
-  padding: 10px 15px; /* Reduced padding */
-  border-radius: 15px; /* Reduced border radius */
-  transition: background-color  ease;
-  /* border: 1px solid #CECECE; */
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: background-color ease;
   margin-bottom: 10px;
   display: block;
   text-decoration: none;
-  /* border-left: 4px solid rgb(255, 28, 172); */
-  border: .5px solid grey;
+  border: 1px solid;
 }
 
+.cryptoContainer { border-color: #ff09c1; }
+.philosophyContainer { border-color: #3083FF; }
+.biologyContainer { border-color: #0BCD29; }
+.aiContainer { border-color: #7030FA; }
+.miscContainer { border-color: #FF2DDD; }
+
+/* ... rest of your CSS remains the same ... */
 
 .containerDiv {
   width: 80%;
@@ -38,7 +43,7 @@
   padding: 20px;
   border-radius: 8px;
   /* border-left: 4px solid #FF1CAC; */
-  border: .5px solid grey;
+  border: 1px solid rgb(255, 6, 218);
   
 }
 
