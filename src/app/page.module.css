@@ -124,7 +124,7 @@
 }
 
 .blogCategory {
-  font-size: 12px;
+  font-size: 14px;
   color: rgb(125, 125, 125);
 }
 
@@ -226,6 +226,10 @@
 
   .previewText {
     font-size: 20;
+  }
+
+  .blogCategory {
+    font-size: 12px;
   }
   
   
