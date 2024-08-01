@@ -18,7 +18,6 @@ export default function About() {
 
   const containerDivClass = `${styles.containerDiv} ${isDarkMode ? styles.darkContainerDiv : styles.lightContainerDiv}`;
 
-
   return (
     <div className={`${styles.container} ${isDarkMode ? 'dark' : ''}`}>
       <header className={styles.header}>
@@ -31,7 +30,7 @@ export default function About() {
         <h2>The Internet of NFTs</h2>
         <div className={styles.blogData}>
           <p className={styles.blogCategory}>Crypto ~</p>
-          <p>10.03.23</p>
+          <p className={styles.blogCategory}>10.03.23</p>
         </div>
       </div>
       <div className={styles.textContainer}>

@@ -63,7 +63,7 @@
 
 .text {
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .blogContainer h3 {
@@ -74,9 +74,10 @@
 
 .blogData {
   display: flex;
-  font-size: 0.9em; /* Reduce font size */
+  font-size: 0.6em; /* Reduce font size */
   color: #666; /* Add a subtle color */
   line-height: 0;
+  font-family: var(--font-roboto-mono);
 }
 
 .lightBlogContainer {
@@ -120,6 +121,11 @@
   text-decoration: none;
   padding: 5px 10px;
   transition: all 0.1s;
+}
+
+.blogCategory {
+  font-size: 12px;
+  color: rgb(125, 125, 125);
 }
 
 .navItem {
@@ -205,8 +211,8 @@
 
   .text {
     width: 100%;
-    font-size: 18px;
-    font-weight: 200;
+    font-size: 16px;
+    font-weight: 300;
   }
 
   .textContainer {
@@ -221,8 +227,6 @@
   .previewText {
     font-size: 20;
   }
-  
-
   
   
 
