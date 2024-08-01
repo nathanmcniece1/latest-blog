@@ -205,8 +205,8 @@
 
   .text {
     width: 100%;
-    font-size: 16px;
-    /* font-weight: 100; */
+    font-size: 18px;
+    font-weight: 200;
   }
 
   .textContainer {
@@ -217,6 +217,11 @@
   .containerDiv {
     margin-top: -10px;
   }
+
+  .previewText {
+    font-size: 20;
+  }
+  
 
   
   

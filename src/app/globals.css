@@ -44,7 +44,7 @@ h3 {
 }
 
 p {
-  font-family: var(--font-roboto-mono), sans-serif;
+  font-family: var(--font-inter), sans-serif;
   color: var(--text);
 }
 
@@ -71,12 +71,13 @@ p {
 
 @media (max-width: 600px) {
   h3 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 100;
   }
   
   p {
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 200;
   }
 
 }
