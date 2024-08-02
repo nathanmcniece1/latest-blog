@@ -1,7 +1,6 @@
 import { ThemeProvider } from './ThemeContext';
 import './globals.css';
-import { Bebas_Neue, Roboto_Mono } from 'next/font/google';
-import '@radix-ui/themes/styles.css';
+import { Bebas_Neue, Roboto_Mono, Inter } from 'next/font/google';
 
 const bebasNeue = Bebas_Neue({
   weight: '400',
