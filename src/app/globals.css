@@ -57,6 +57,11 @@ p {
 .themeToggle {
   background-color: var(--text);
   color: var(--background);
+  font-family: var(--font-roboto-mono), monospace;
+}
+
+.button {
+  font-family: var(--font-roboto-mono);
 }
 
 .navigation a {

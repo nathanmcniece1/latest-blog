@@ -105,6 +105,8 @@
   background-color: var(--text);
   color: var(--background);
   transition: background-color , color 0.1s;
+  font-family: var(--font-roboto-mono);
+  font-size: 10px;
 }
 
 .navigation {
