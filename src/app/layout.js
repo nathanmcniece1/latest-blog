@@ -1,6 +1,7 @@
 import { ThemeProvider } from './ThemeContext';
 import './globals.css';
 import { Bebas_Neue, Roboto_Mono } from 'next/font/google';
+import '@radix-ui/themes/styles.css';
 
 const bebasNeue = Bebas_Neue({
   weight: '400',
@@ -14,6 +15,13 @@ const robotoMono = Roboto_Mono({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-roboto-mono',
+});
+
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
 });
 
 export default function RootLayout({ children }) {
