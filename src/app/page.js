@@ -4,6 +4,9 @@ import { useContext, useEffect, useState } from 'react';
 import { ThemeContext } from './ThemeContext';
 import styles from "./page.module.css";
 import Link from 'next/link';
+import Image from 'next/image'
+
+
 
 import { Bebas_Neue } from 'next/font/google';
 
@@ -37,7 +40,7 @@ export default function Home() {
       <header className={styles.header}>
         <h1>Musashi</h1>
         <button onClick={toggleTheme} className={styles.themeToggle}>
-          {isDarkMode ? 'Light' : 'Dark'} Mode
+          {isDarkMode ? <Image src="/images/white-sun.png" alt="Logo" width={20} height={20} /> : <Image src="/images/grey-moon.png" alt="Logo" width={24} height={24} />}
         </button>
       </header>
       <nav className={styles.navigation}>
