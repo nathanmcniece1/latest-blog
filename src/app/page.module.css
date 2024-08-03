@@ -160,6 +160,9 @@
   color: rgb(125, 125, 125);
 }
 
+.bottomDiv {
+  height: 75px;
+}
 
 .navItem {
   /* Remove text-decoration and padding from here as they're now in .navigation a */

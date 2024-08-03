@@ -37,18 +37,18 @@ export default function Home() {
 
   return (
     <div className={`${styles.container} ${isDarkMode ? 'dark' : ''}`}>
-   <header className={styles.header}>
-  <h1>Musashi</h1>
-  <div className={styles.headerControls}>
-    <button onClick={toggleTheme} className={styles.themeToggle}>
-      {isDarkMode ? <Image src="/images/white-sun.png" alt="Light mode" width={18} height={18} /> : <Image src="/images/grey-moon.png" alt="Dark mode" width={16} height={16} />}
-    </button>
-    <button className={styles.menuIcon}>
-      <div className={styles.menuLine}></div>
-      <div className={styles.menuLine}></div>
-    </button>
-  </div>
-</header>
+        <header className={styles.header}>
+        <h1>Musashi</h1>
+        <div className={styles.headerControls}>
+          <button onClick={toggleTheme} className={styles.themeToggle}>
+            {isDarkMode ? <Image src="/images/white-sun.png" alt="Light mode" width={18} height={18} /> : <Image src="/images/grey-moon.png" alt="Dark mode" width={16} height={16} />}
+          </button>
+          <button className={styles.menuIcon}>
+            <div className={styles.menuLine}></div>
+            <div className={styles.menuLine}></div>
+          </button>
+        </div>
+      </header>
       <nav className={styles.navigation}>
         <a href="#" className={`${styles.navItem} ${styles.allItem} ${styles.active}`}>ALL</a>
         <a href="#" className={`${styles.navItem} ${styles.cryptoItem}`}>CRYPTO</a>
@@ -147,6 +147,7 @@ export default function Home() {
           <p className={styles.blogCategory}>10.03.23</p>
         </div>
       </div>
+      <div className={styles.bottomDiv}></div>
     </div>
   );
 }
