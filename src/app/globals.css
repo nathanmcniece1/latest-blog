@@ -12,6 +12,7 @@
   --blog-background: #F6F6F6;
   --blog-text: #000000;
   --theme-toggle-border: #CECECE;
+  --theme-toggle-background: #F8F8F8;
 }
 
 .dark {
@@ -20,6 +21,7 @@
   --blog-background: #1C1B1B;
   --blog-text: #ffffff;
   --theme-toggle-border: #CECECE;
+  --theme-toggle-background: #2A2A2A;
 }
 
 body {
