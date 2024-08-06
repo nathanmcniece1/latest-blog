@@ -45,7 +45,10 @@ export default function Home() {
           <button onClick={toggleTheme} className={styles.themeToggle}>
             {isDarkMode ? <Image src="/images/white-sun.png" alt="Light mode" width={18} height={18} /> : <Image src="/images/grey-moon.png" alt="Dark mode" width={16} height={16} />}
           </button>
-          <button className={styles.menuIcon} onClick={() => setIsMenuOpen(true)}>
+          <button 
+            className={`${styles.menuIcon} ${isMenuOpen ? styles.menuIconOpen : ''}`} 
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
             <div className={styles.menuLine}></div>
             <div className={styles.menuLine}></div>
           </button>

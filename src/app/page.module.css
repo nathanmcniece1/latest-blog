@@ -137,7 +137,24 @@
   width: 18px;
   height: 1px;
   background-color: var(--text);
-  transition: background-color 0.1s;
+  transition: transform 0.3s ease, background-color 0.1s;
+  position: absolute;
+}
+
+.menuLine:first-child {
+  transform: translateY(-3px);
+}
+
+.menuLine:last-child {
+  transform: translateY(2px);
+}
+
+.menuIconOpen .menuLine:first-child {
+  transform: rotate(45deg);
+}
+
+.menuIconOpen .menuLine:last-child {
+  transform: rotate(-45deg);
 }
 .navigation {
   display: flex;

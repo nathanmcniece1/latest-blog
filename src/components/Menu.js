@@ -1,13 +1,12 @@
 import React from 'react';
 import styles from './Menu.module.css';
 
-const Menu = ({ isOpen, onClose, isDarkMode }) => {
+const Menu = ({ isOpen, isDarkMode }) => {
   if (!isOpen) return null;
 
   return (
-    <div className={`${styles.menuOverlay} ${isDarkMode ? styles.darkMenu : ''}`}>
+    <div className={`${styles.menuOverlay} ${isDarkMode ? styles.darkMenu : ''} ${isOpen ? styles.menuOpen : ''}`}>
       <div className={styles.menuContent}>
-        <button className={styles.closeButton} onClick={onClose}>X</button>
         <nav className={styles.menuNav}>
           <a href="#about">ABOUT</a>
           <a href="#books">BOOKS</a>
