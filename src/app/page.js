@@ -5,6 +5,7 @@ import { ThemeContext } from './ThemeContext';
 import styles from "./page.module.css";
 import Link from 'next/link';
 import Image from 'next/image'
+import Menu from '../components/Menu'; 
 
 
 
@@ -20,6 +21,7 @@ const bebasNeue = Bebas_Neue({
 export default function Home() {
   const { isDarkMode, toggleTheme } = useContext(ThemeContext);
   const [mounted, setMounted] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -43,12 +45,13 @@ export default function Home() {
           <button onClick={toggleTheme} className={styles.themeToggle}>
             {isDarkMode ? <Image src="/images/white-sun.png" alt="Light mode" width={18} height={18} /> : <Image src="/images/grey-moon.png" alt="Dark mode" width={16} height={16} />}
           </button>
-          <button className={styles.menuIcon}>
+          <button className={styles.menuIcon} onClick={() => setIsMenuOpen(true)}>
             <div className={styles.menuLine}></div>
             <div className={styles.menuLine}></div>
           </button>
         </div>
       </header>
+      <Menu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} isDarkMode={isDarkMode}  />
       <nav className={styles.navigation}>
         <a href="#" className={`${styles.navItem} ${styles.allItem} ${styles.active}`}>ALL</a>
         <a href="#" className={`${styles.navItem} ${styles.cryptoItem}`}>CRYPTO</a>
