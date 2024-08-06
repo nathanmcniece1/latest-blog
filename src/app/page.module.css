@@ -133,6 +133,14 @@
   gap: 4px;
 }
 
+.content {
+  transition: filter 0.3s ease;
+}
+
+.content.blurred {
+  filter: blur(10px);
+}
+
 .menuLine {
   width: 18px;
   height: 1px;

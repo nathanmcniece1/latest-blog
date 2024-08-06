@@ -55,6 +55,7 @@ export default function Home() {
         </div>
       </header>
       <Menu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} isDarkMode={isDarkMode}  />
+      <div className={`${styles.content} ${isMenuOpen ? styles.blurred : ''}`}>
       <nav className={styles.navigation}>
         <a href="#" className={`${styles.navItem} ${styles.allItem} ${styles.active}`}>ALL</a>
         <a href="#" className={`${styles.navItem} ${styles.cryptoItem}`}>CRYPTO</a>
@@ -154,6 +155,7 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.bottomDiv}></div>
+    </div>
     </div>
   );
 }
