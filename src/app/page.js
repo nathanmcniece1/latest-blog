@@ -8,7 +8,6 @@ import Image from 'next/image'
 import Menu from '../components/Menu'; 
 
 
-
 import { Bebas_Neue } from 'next/font/google';
 
 const bebasNeue = Bebas_Neue({
@@ -40,7 +39,9 @@ export default function Home() {
   return (
     <div className={`${styles.container} ${isDarkMode ? 'dark' : ''}`}>
         <header className={styles.header}>
+          <Link href="/">
         <h1>Musashi</h1>
+        </Link>
         <div className={styles.headerControls}>
           <button onClick={toggleTheme} className={styles.themeToggle}>
             {isDarkMode ? <Image src="/images/white-sun.png" alt="Light mode" width={18} height={18} /> : <Image src="/images/grey-moon.png" alt="Dark mode" width={16} height={16} />}

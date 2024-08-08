@@ -1,8 +1,12 @@
 'use client';
 
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { ThemeContext } from '../ThemeContext';
 import styles from "../page.module.css";
+import Image from 'next/image';
+import Menu from '../../components/Menu';
+import Link from 'next/link';
+
 
 import { Bebas_Neue } from 'next/font/google';
 
@@ -15,17 +19,32 @@ const bebasNeue = Bebas_Neue({
 
 export default function About() {
   const { isDarkMode, toggleTheme } = useContext(ThemeContext);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  
 
   const containerDivClass = `${styles.containerDiv} ${isDarkMode ? styles.darkContainerDiv : styles.lightContainerDiv}`;
 
   return (
     <div className={`${styles.container} ${isDarkMode ? 'dark' : ''}`}>
       <header className={styles.header}>
+      <Link href="/">
         <h1>Musashi</h1>
-        <button onClick={toggleTheme} className={styles.themeToggle}>
-          {isDarkMode ? 'Light' : 'Dark'} Mode
-        </button>
+        </Link>
+        <div className={styles.headerControls}>
+          <button onClick={toggleTheme} className={styles.themeToggle}>
+            {isDarkMode ? <Image src="/images/white-sun.png" alt="Light mode" width={18} height={18} /> : <Image src="/images/grey-moon.png" alt="Dark mode" width={16} height={16} />}
+          </button>
+          <button 
+            className={`${styles.menuIcon} ${isMenuOpen ? styles.menuIconOpen : ''}`} 
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <div className={styles.menuLine}></div>
+            <div className={styles.menuLine}></div>
+          </button>
+        </div>
       </header>
+      <Menu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} isDarkMode={isDarkMode} />
       <div className={containerDivClass}>
         <h2>The Internet of NFTs</h2>
         <div className={styles.blogData}>
